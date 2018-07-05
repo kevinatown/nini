@@ -4,7 +4,7 @@ This week we will spend time on learning and using `git`.
 
 ## Prework
 
-1. 
+1. Complete the Basic git workflow and git branching at: https://www.codecademy.com/learn/learn-git
 
 ## Basic Git commands
 
@@ -22,4 +22,4 @@ This week we will spend time on learning and using `git`.
     - `git checkout -b new_branch_name` - checkout a new branch
 * `git merge branch_to_merge` - merges `branch_to_merge` into current branch
 
-### 
+#
