@@ -29,6 +29,7 @@ UNIX/LINUX/Darwin (osx) file system is layed out like a tree (a single directory
 * `mkdir` - make a dirctory
 * `ls` - list contents of directory
 * `rm` - remove a file/directory
+* `sudo` - superuser do
 
 ## PYTHON
 
