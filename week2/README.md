@@ -20,5 +20,6 @@ This week we will spend time on learning and using `git`.
 * `git branch` - see what branches exist (current branch will be highlighted and marked with `*`)
 * `git checkout` - checkout/change the branch
     - `git checkout -b new_branch_name` - checkout a new branch
+* `git merge branch_to_merge` - merges `branch_to_merge` into current branch
 
 ### 
