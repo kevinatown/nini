@@ -5,6 +5,9 @@ This week we will spend time on learning and using `git`.
 ## Prework
 
 1. Complete the Basic git workflow and git branching at: https://www.codecademy.com/learn/learn-git
+2. Create all new notes in another branch besides `branchalpha`, that starts from `master`
+    * all commands typed into codeacademy
+3. Create a mr (merge request) for your new branch into `master` and `branchalpha`
 
 ## Basic Git commands
 
