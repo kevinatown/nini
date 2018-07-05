@@ -18,6 +18,8 @@ This week we are going to spend a little time reacquainting with interacting wit
 UNIX/LINUX/Darwin (osx) file system is layed out like a tree (a single directory that has files and other directories inside of it). We'll cover the basics of it and will spend sometime poking though the system. Here are some basics:
 * `/` - the root directory, i.e. the directory that containes everything
 * `~` - home on osx it's `/Users/{username}`, on ubuntu (a LINUX distro) its: `/home/{username}`
+* `.` - current directory
+* `..` - parent directory
 
 ## Basic UNIX command line common commands
 * `man` - open the manual
