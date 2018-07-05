@@ -26,6 +26,10 @@ UNIX/LINUX/Darwin (osx) file system is layed out like a tree (a single directory
 * `cd` - change directory
 * `nano` - basic command line text editor
 * `vi` | `vim` - basic command line text editor
+    - `i` to enter insert mode (you will see this at the bottom left of the screen)
+    - `:` used to enter commands
+        - `wq` to write (save) and quit
+        - `q!` to quit with out saving
 * `mv` - move or rename files
 * `cp` - copy files/directory
 * `mkdir` - make a dirctory
