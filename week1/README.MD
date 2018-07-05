@@ -32,7 +32,9 @@ UNIX/LINUX/Darwin (osx) file system is layed out like a tree (a single directory
 * `ls` - list contents of directory
 * `rm` - remove a file/directory
 * `sudo` - superuser do
+* `touch` - touches file, updates time stamp 
 
-## PYTHON
+## Homework
+Use these commands on the command line. Poke around your system some more.
 
 
