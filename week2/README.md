@@ -26,35 +26,39 @@ This week we will spend time on learning and using `git`.
     - `git checkout -b new_branch_name` - checkout a new branch
 * `git merge branch_to_merge` - merges `branch_to_merge` into current branch
 
+## Basic Git Workflow
+
+Places may differ about branch naming conventions and the *main working branch* (e.g. `master`, `develop`, or `development`), but the majority of the time the git workflow stays the same.
+
 **Keep in mind** this is for starting work on a specific task/feature/bug fix.
 
-# `git checkout master`
-    - see the above note about the main working branch
-    - you do this step to make sure you can get the most updated code
-# `git pull`
-    - get the most updated code from the server on the main working branch
-# `git checkout -b <new_branch>`
-    - create your branch
-    - naming conventions differ, but a lot of people use `feature/branch_name` (if its a feature) and `bug/branch_name` if its a bug
-    - often the branch name has the ticket/issue number in it to track
-# do the work!
-# `git add`
-# `git commit -m 'small commit messge'`
-# `git push`
-    - steps 4, 5, 6 do often and repeat often. 
-    - git commit is saving your work with git, so that you can go back to previous saves if need be
-    - do 7 often is because you are saving your work on a remote server so if you computer dies or you dont have it or whatever your work is saved!
-    - also 7 allows for other people to pull your branch, help you out, and work on the branch if need be
-# Create a merge request (MR) or pull request (PR) and have your code reviewed
-    - settle conflicts [look below](Settling_conflits_locally)
-
+1. `git checkout <main_working_branch>`
+	- see the above note about the main working branch
+	- you do this step to make sure you can get the most updated code
+2. `git pull`
+	- get the most updated code from the server on the main working branch
+3. `git checkout -b <new_branch>`
+	- create your branch
+	- naming conventions differ, but a lot of people use `feature/branch_name` (if its a feature) and `bug/branch_name` if its a bug
+	- often the branch name has the ticket/issue number in it to track
+4. do the work!
+5. `git add`
+6. `git commit -m 'small commit messge'`
+7. `git push`
+	- steps 4, 5, 6 do often and repeat often. 
+	- git commit is saving your work with git, so that you can go back to previous saves if need be
+	- do 7 often is because you are saving your work on a remote server so if you computer dies or you dont have it or whatever your work is saved!
+	- also 7 allows for other people to pull your branch, help you out, and work on the branch if need be
+8. Create a merge request (MR) or pull request (PR) and have your code reviewed
+	- settle conflicts [look below](Settling_conflits_locally)
+9. Merge in code and start all over
 
 ### Settling conflits locally
 From your working branch that has conflicts:
 ```bash
 git pull origin master # or whatever the main working branch
 # pay attenion to the console output! it will have
-# CONFLICT ./path/to/file/withConflicts.txt
+# CONFLICT (content): Merge conflict in ./path/to/file/withConflicts.txt
 # solve all of those conflicts
 git commit -am "resolved conflicts"
 git push
@@ -68,6 +72,6 @@ blah blah blah
 ======================
 some changes made a while a go
 blah
-<<<<<<<<<<<<<<<<<<<<<< (master at #823nu)
+<<<<<<<<<<<<<<<<<<<<<< ( #823nu)
 ```
-with 
+with this info choose what you want to keep and delete the rest. **Make sure to delete all:** `<<<<` && `>>>>` && `====`
