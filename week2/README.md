@@ -32,7 +32,7 @@ Places may differ about branch naming conventions and the *main working branch* 
 
 **Keep in mind** this is for starting work on a specific task/feature/bug fix.
 
-1. `git checkout master`
+1. `git checkout <main_working_branch>`
 	- see the above note about the main working branch
 	- you do this step to make sure you can get the most updated code
 2. `git pull`
@@ -53,13 +53,12 @@ Places may differ about branch naming conventions and the *main working branch* 
 	- settle conflicts [look below](Settling_conflits_locally)
 9. Merge in code and start all over
 
-
 ### Settling conflits locally
 From your working branch that has conflicts:
 ```bash
 git pull origin master # or whatever the main working branch
 # pay attenion to the console output! it will have
-# CONFLICT ./path/to/file/withConflicts.txt
+# CONFLICT (content): Merge conflict in ./path/to/file/withConflicts.txt
 # solve all of those conflicts
 git commit -am "resolved conflicts"
 git push
@@ -73,6 +72,6 @@ blah blah blah
 ======================
 some changes made a while a go
 blah
-<<<<<<<<<<<<<<<<<<<<<< (master at #823nu)
+<<<<<<<<<<<<<<<<<<<<<< ( #823nu)
 ```
 with this info choose what you want to keep and delete the rest. **Make sure to delete all:** `<<<<` && `>>>>` && `====`
