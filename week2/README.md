@@ -21,8 +21,7 @@ This week we will spend time on learning and using `git`.
 * `git pull` - pull from the server
 * `git push` - push to the server
 * `git branch` - see what branches exist (current branch will be highlighted and marked with `*`)
+	- `git branch -d branch_name` - Deletes the branch specified
 * `git checkout branch_name` - checkout/change the branch to `branch_name`
     - `git checkout -b new_branch_name` - checkout a new branch
 * `git merge branch_to_merge` - merges `branch_to_merge` into current branch
-
-#
