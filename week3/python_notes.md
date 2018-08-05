@@ -7,6 +7,12 @@
 * int() - integer, if used on a floating point number, it will round the number down.
 * float() - To preserve the decimal, use this
 * str() - convert variables to a string
+* len() - get length of a string
+* lower() - get rid of capital letters 
+	- variable.lower()
+* upper() - capitalizes all characters in string
+	- variable.upper()
+* raw_input () - 
 
 ## Definitions
 * Strings - a series of letters, numbers, or symbols connected in order
@@ -19,3 +25,6 @@
 * boolean - only ever take one of two values. 
 	- In Python, we define booleans using the keywords True and False
 	-  A value of True corresponds to an integer value of 1, and will behave the same. A value of False corresponds to an integer value of 0.
+* % - operator after the string is used to combine a string with variables
+	- If you'd like to print a variable that is an integer, you can "pad" it with zeros using %02d. The 0 means "pad with zeros", the 2 means to pad to 2 characters wide, and the d means the number is a signed integer (can be positive or negative)
+
