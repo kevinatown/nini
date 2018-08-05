@@ -28,3 +28,8 @@
 * % - operator after the string is used to combine a string with variables
 	- If you'd like to print a variable that is an integer, you can "pad" it with zeros using %02d. The 0 means "pad with zeros", the 2 means to pad to 2 characters wide, and the d means the number is a signed integer (can be positive or negative)
 
+## Date and time
+
+* from datetime import datetime - imports the datetime library so that we can use it.
+* print datetime.now() - print out the current date and time.
+
