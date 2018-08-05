@@ -2,7 +2,7 @@
 
 
 #
-# Welcome to you first programming lesson use this file to write python functions
+# Welcome to your first programming lesson use this file to write python functions
 #
 
 def onePlusOne():
@@ -87,3 +87,26 @@ def main():
 # dont worry about this yet
 if __name__ == '__main__':
   main()
+
+
+# Grade converter
+def grade_converter(grade):
+    if grade >= 90:
+        return "A"
+    elif grade < 90 and grade >= 80:
+        return "B"
+    elif grade < 80 and grade >= 70:
+        return "C"
+    elif grade < 70 and grade >= 65:
+        return "D"
+    else:
+        return "F"
+      
+# This should print an "A"      
+print grade_converter(92)
+
+# This should print a "C"
+print grade_converter(70)
+
+# This should print an "F"
+print grade_converter(61)
