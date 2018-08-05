@@ -103,10 +103,33 @@ def grade_converter(grade):
         return "F"
       
 # This should print an "A"      
-print grade_converter(92)
+print "92 = " + grade_converter(92)
 
 # This should print a "C"
-print grade_converter(70)
+print "70 = " + grade_converter(70)
 
 # This should print an "F"
-print grade_converter(61)
+print "61 = " + grade_converter(61)
+
+
+# What's your name
+name = raw_input ("What's your name?")
+  if len (name) > 0:
+   print "Hello, " + name + "!"
+  else:
+    print "You didn't tell me your name."
+
+# Pig Latin Translator
+print 'Welcome to the Pig Latin Translator!'
+
+pyg = "ay"
+original = raw_input("Enter a word: ") 
+
+if len(original) > 0 and original.isalpha():
+  print original
+else:
+  print "empty"
+
+
+
+
