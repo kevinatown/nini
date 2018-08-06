@@ -114,10 +114,10 @@ print "61 = " + grade_converter(61)
 
 # What's your name
 name = raw_input ("What's your name?")
-  if len (name) > 0:
-   print "Hello, " + name + "!"
-  else:
-    print "You didn't tell me your name."
+if len (name) > 0:
+  print "Hello, " + name + "!"
+else:
+  print "You didn't tell me your name."
 
 # Pig Latin Translator
 print 'Welcome to the Pig Latin Translator!'
@@ -125,10 +125,23 @@ print 'Welcome to the Pig Latin Translator!'
 pyg = "ay"
 original = raw_input("Enter a word: ") 
 
-if len(original) > 0 and original.isalpha():
-  print original
+if len(original) > 0 and original.isalpha(): #checks if all character are letters
+  word = original.lower() # changes all characters to lowercase
+  first = word[0] # sets variable first to be first letter of word
+  new_word = word + first + pyg
+  new_word = new_word[1:len(new_word)] # sets new_word to leave out first letter
+  print new_word
 else:
-  print "empty"
+  original_2 = raw_input("Please try again. Do not include any spaces or numbers: ") 
+
+  if len(original_2) > 0 and original_2.isalpha(): #checks if all character are letters
+    word = original_2.lower() # changes all characters to lowercase
+    first = word[0] # sets variable first to be first letter of word
+    new_word = word + first + pyg
+    new_word = new_word[1:len(new_word)] # sets new_word to leave out first letter
+    print new_word
+  else:
+    print "Fine. Don't listen to me. Good bye."
 
 
 
