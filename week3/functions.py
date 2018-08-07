@@ -119,6 +119,7 @@ if len (name) > 0:
 else:
   print "You didn't tell me your name."
 
+
 # Pig Latin Translator
 print 'Welcome to the Pig Latin Translator!'
 
@@ -134,7 +135,8 @@ if len(original) > 0 and original.isalpha():
   new_word = word + first + pyg
   new_word = new_word[1:len(new_word)] 
     # sets new_word to leave out first letter
-  print new_word
+  print original + " in Pig Latin is " + new_word
+
 else:
   original_2 = raw_input("Please try again. Do not include any spaces or numbers: ") 
 
@@ -147,7 +149,9 @@ else:
     new_word = word + first + pyg
     new_word = new_word[1:len(new_word)] 
       # sets new_word to leave out first letter
-    print new_word
+    print original_2 + " in Pig Latin is " + new_word
+
+ # I'd like to create a loop so they could continue to input words
   else:
     print "Fine. Don't listen to me. Good bye."
 

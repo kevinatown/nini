@@ -4,16 +4,16 @@
 * `print"statement"` - python2
 * `print("statement")` - python3
 * % - modulo (returns remainder after division)
-* int() - integer, if used on a floating point number, it will round the number down.
-* float() - To preserve the decimal, use this
-* str() - convert variables to a string
-* len() - get length of a string
-* .lower() - get rid of capital letters 
-	- variable.lower()
-* .upper() - capitalizes all characters in string
-	- variable.upper()
-* .isalpha() - checks to see if all characters are letters	
-* raw_input () - 
+* `int()` - integer, if used on a floating point number, it will round the number down.
+* `float()` - To preserve the decimal, use this
+* `str()` - convert variables to a string
+* `len()` - get length of a string
+* `.lower()` - get rid of capital letters 
+	- `variable.lower()`
+* .`upper()` - capitalizes all characters in string
+	- `variable.upper()`
+* `.isalpha()` - checks to see if all characters are letters	
+* `raw_input ()` - 
 * 
 
 ## Definitions 
@@ -27,6 +27,8 @@
 * boolean - only ever take one of two values. 
 	- In Python, we define booleans using the keywords True and False
 	-  A value of True corresponds to an integer value of 1, and will behave the same. A value of False corresponds to an integer value of 0.
+* parameters - place holder variables
+* arguments - inputs into a function
 
 ## Syntax 
 * % - operator after the string is used to combine a string with variables
@@ -52,5 +54,5 @@
 ## Date and time
 
 * from datetime import datetime - imports the datetime library so that we can use it.
-* print datetime.now() - print out the current date and time.
+* `print datetime.now()` - print out the current date and time.
 
