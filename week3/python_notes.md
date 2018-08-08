@@ -76,3 +76,7 @@
 * from datetime import datetime - imports the datetime library so that we can use it.
 * `print datetime.now()` - print out the current date and time.
 
+## Questions
+* Return vs print?
+* 
+
