@@ -1,5 +1,25 @@
 # Python Notes
 
+## Functions
+* header - includes the 'def' keyword, the name of the function, and any parameters the function requires. Here's an example:
+* optional comment - explains what the function does
+* body - describes the procedures the function carries out. The body is indented, just like conditional statements.
+* functions built into python
+	def biggest_number(*args):
+ 		 print max(args)
+  		return max(args)
+	def smallest_number(*args):
+		 print min(args)
+  		return min(args)
+	def distance_from_zero(arg):
+ 		 print abs(arg)
+  		return abs(arg)
+
+	biggest_number(-10, -5, 5, 10)
+	smallest_number(-10, -5, 5, 10)
+	distance_from_zero(-10)
+
+
 ## Commands
 * `print"statement"` - python2
 * `print("statement")` - python3
@@ -14,7 +34,12 @@
 	- `variable.upper()`
 * `.isalpha()` - checks to see if all characters are letters	
 * `raw_input ()` - 
-* 
+* `import` 
+	- math - import the math modulo in Python
+		- math.sqrt(n)
+	- `from modulo import function` - import certain function from a modulo
+	- `from modulo import *` - import all from the modulo
+* `type()` - returns the type of data received by an argument
 
 ## Definitions 
 * Strings - a series of letters, numbers, or symbols connected in order
@@ -45,11 +70,6 @@
 * if - conditional statement that executes some specified code after checking if its expression is True.
 	- else - complements the if statement. An if/else pair says: "If this expression is true, run this indented code block; otherwise, run this code after the else statement.
 	- elif - "else if" otherwise, if the following expression is true, do this!
-
-## Functions
-* header - includes the 'def' keyword, the name of the function, and any parameters the function requires. Here's an example:
-* optional comment - explains what the function does
-* body - describes the procedures the function carries out. The body is indented, just like conditional statements.
 
 ## Date and time
 
