@@ -64,9 +64,21 @@
 	- < and > - less than and greater then
 	- <= and >= - less than or eqaul to and greater than or equal to
 * and, or, not
-	- and, -  checks if both the statements are True;
-    - or - checks if at least one of the statements is True;
-    - not - gives the opposite of the statement.
+	- `and` (`&&`) -  checks if both the statements are True;
+		```python
+		li = [1, 2, 3, 4]
+		isList = (type(li) is list) and (len(li) > 2)
+		```
+    - `or` (`||`) - checks if at least one of the statements is True;
+    	```python 
+    	print True or False
+    	# True
+    	```
+    - `not` (`!`) - gives the opposite of the statement.
+    	```python
+    		someVar = True
+    		otherVar = not someVar #false
+    	```
 * if - conditional statement that executes some specified code after checking if its expression is True.
 	- else - complements the if statement. An if/else pair says: "If this expression is true, run this indented code block; otherwise, run this code after the else statement.
 	- elif - "else if" otherwise, if the following expression is true, do this!

@@ -10,8 +10,11 @@ def onePlusOne():
   # do work
   return 1 + 1
 
+def sentenceToListOfWords(sentence):
+  pass
+
 def stringToInts(array):
-  """
+  '''
   Takes an array, convets all potential ints
   
   Arguments: 
@@ -19,7 +22,10 @@ def stringToInts(array):
 
   Returns:
   an array with all items as ints, and none ints removes
-  """
+  [ '3', '4', '9' ] => [3, 4, 9]
+  [ '3', 'the' ] => [ 3 ]
+
+  '''
   returnArray = []
   for item in array:
     # this is a simple for loop, python makes it easy to iterate over each item in a list
@@ -28,7 +34,8 @@ def stringToInts(array):
       num = int(item)
       returnArray.append(num)
     except ValueError:
-      print('%s is not an int' % item)
+      print(item + ' is not an int you dummy')
+
   return returnArray
 
 def removeDuplicates(array):
@@ -54,7 +61,6 @@ def sumArray(array):
     sum -- int
   """
   pass
-
 
 
 def main():
@@ -87,22 +93,24 @@ def main():
 # dont worry about this yet
 if __name__ == '__main__':
   main()
-
+# EOF
 
 # Grade converter
 def grade_converter(grade):
-    if grade >= 90:
-        return "A"
-    elif grade < 90 and grade >= 80:
-        return "B"
-    elif grade < 80 and grade >= 70:
-        return "C"
-    elif grade < 70 and grade >= 65:
-        return "D"
-    else:
-        return "F"
-      
-# This should print an "A"      
+  if grade >= 90:
+    return "A"
+  elif grade < 90 and grade >= 80:
+    return "B"
+  elif grade < 80 and grade >= 70:
+    return "C"
+  elif grade < 70 and grade >= 65:
+    return "D"
+  else:
+    return "F"
+
+
+
+
 print "92 = " + grade_converter(92)
 
 # This should print a "C"
@@ -112,8 +120,9 @@ print "70 = " + grade_converter(70)
 print "61 = " + grade_converter(61)
 
 
+
 # What's your name
-name = raw_input ("What's your name?")
+name = raw_input("What's your name?")
 if len (name) > 0:
   print "Hello, " + name + "!"
 else:
@@ -121,39 +130,77 @@ else:
 
 
 # Pig Latin Translator
+
+def convertWordToPyg(old_word):
+  #checks if all character are letters
+  word = old_word.lower() 
+  # changes all characters to lowercase
+  first = word[0] 
+  # sets variable first to be first letter of word
+  new_word = word + first + pyg
+  new_word = new_word[1:len(new_word)] 
+  return new_word
+  # sets new_word to leave out first letter
+
 print 'Welcome to the Pig Latin Translator!'
 
 pyg = "ay"
 original = raw_input("Enter a word: ") 
-
+      
 if len(original) > 0 and original.isalpha(): 
-  #checks if all character are letters
-  word = original.lower() 
-    # changes all characters to lowercase
-  first = word[0] 
-    # sets variable first to be first letter of word
-  new_word = word + first + pyg
-  new_word = new_word[1:len(new_word)] 
-    # sets new_word to leave out first letter
-  print original + " in Pig Latin is " + new_word
+
+  # #checks if all character are letters
+  # word = original.lower() 
+  #   # changes all characters to lowercase
+  # first = word[0] 
+  #   # sets variable first to be first letter of word
+  # new_word = word + first + pyg
+  # new_word = new_word[1:len(new_word)]
+  # # ['C', 'A', 'T'] is not "CAT" # True 
+  # # catArray["A": "T"], [start_position : end_position (not inclusive)]
+  #   # sets new_word to leave out first letter
+  pyg_word = convertWordToPyg(original)
+  print original + " in Pig Latin is " + pyg_word
 
 else:
   original_2 = raw_input("Please try again. Do not include any spaces or numbers: ") 
 
   if len(original_2) > 0 and original_2.isalpha(): 
-    #checks if all character are letters
-    word = original_2.lower() 
-      # changes all characters to lowercase
-    first = word[0] 
-      # sets variable first to be first letter of word
-    new_word = word + first + pyg
-    new_word = new_word[1:len(new_word)] 
-      # sets new_word to leave out first letter
-    print original_2 + " in Pig Latin is " + new_word
+    print original_2 + " in Pig Latin is " + convertWordToPyg(original)
 
  # I'd like to create a loop so they could continue to input words
   else:
     print "Fine. Don't listen to me. Good bye."
+
+
+#Trip Cost
+def hotel_cost(nights):
+  return 140 * nights
+
+def plane_ride_cost(city):
+  if city == "Charlotte":
+    return 183
+  elif city == "Tampa":
+    return 220
+  elif city == "Pittsburgh":
+    return 222
+  elif city == "Los Angeles":
+    return 475
+  else:
+    return "The city you entered does not exist"
+  
+def rental_car_cost(days):
+  car_cost = 40 * days
+  if days >= 7:
+    car_cost -= 50   
+  elif days >= 3 and days < 7:
+    car_cost -= 20
+  return car_cost
+
+def trip_cost(city, days, spending_money):
+  return rental_car_cost(days) + hotel_cost(days - 1) + plane_ride_cost(city) + spending_money
+  
+print trip_cost("Los Angeles", 5, 600)
 
 
 
