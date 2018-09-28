@@ -88,6 +88,13 @@
 * from datetime import datetime - imports the datetime library so that we can use it.
 * `print datetime.now()` - print out the current date and time.
 
+## List
+* Adatatype you can use to store a collection of different pieces of information as a sequence under a single variable name
+* Lists can be empty with nothing between the brackets, ie, empty_list = []
+
+## Index
+* 
+
 ## Questions
 * Return vs print?
 * 

@@ -69,4 +69,14 @@ def trip_cost(city, days, spending_money):
   return rental_car_cost(days) + hotel_cost(days - 1) + plane_ride_cost(city) + spending_money
   
 print trip_cost("Los Angeles", 5, 600)
+
+
+numbers = [5, 6, 7, 8]
+
+print "Adding the numbers at indices 0 and 2..."
+print numbers[0] + numbers[2]
+print "Adding the numbers at indices 1 and 3..."
+# Your code here!
+print numbers[1] + numbers[3]
+
   
