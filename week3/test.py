@@ -79,4 +79,17 @@ print "Adding the numbers at indices 1 and 3..."
 # Your code here!
 print numbers[1] + numbers[3]
 
-  
+
+
+suitcase = [] 
+suitcase.append("sunglasses")
+
+# Your code here!
+suitcase.append("sword")
+suitcase.append("dead body")
+suitcase.append("bathing suit")
+
+list_length = len(suitcase) # Set this to the length of suitcase
+
+print "There are %d items in the suitcase." % (list_length)
+print suitcase
